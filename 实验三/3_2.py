@@ -1,27 +1,23 @@
 tel = input()
 tel = tel.upper()
-a=tel.split('-')
-print(a)
-for x in a:
-    print(x)
-    for y in x:
-        print(y)
-        if y=='A' or y=='B' or y=='C':
-            y=1
-        elif y=='D' or y=='E' or y=='F':
-            x.replace(y,"3")
-            
-        elif y=='G' or y=='H' or y=='I':
-            x.replace(y,"4")
-        elif y=='J' or y=='K' or y=='L':
-            x.replace(y,"5")
-        elif y=='M' or y=='N' or y=='O':
-            x.replace(y,"6")
-        elif y=='P' or y=='Q' or y=='R' or y=='S':
-            x.replace(y,"7")
-        elif y=='T' or y=='U' or y=='V' :
-            x.replace(y,"8")
-        elif y=='W' or y=='X' or y=='Y' or y=='Z':
-            x.replace(y,"9")
-    print(x + "---")
+
+
+for i in range(0,len(tel)):
+    if tel[i]=='A' or tel[i]=='B' or tel[i]=='C':
+        tel.replace(tel[i],"2")
+    elif tel[i]=='D' or tel[i]=='E' or tel[i]=='F':
+         tel.replace(tel[i],"3")
+    elif tel[i]=='G' or tel[i]=='H' or tel[i]=='I':
+         tel.replace(tel[i],"4")
+    elif tel[i]=='J' or tel[i]=='K' or tel[i]=='L':
+         tel.replace(tel[i],'5')
+    elif tel[i]=='M' or tel[i]=='N' or tel[i]=='O':
+         tel.replace(tel[i],'6')
+    elif tel[i]=='P' or tel[i]=='Q' or tel[i]=='R' or tel[i]=='S':
+         tel.replace(tel[i],'7')
+    elif tel[i]=='T' or tel[i]=='U' or tel[i]=='V' :
+         tel.replace(tel[i],'8')
+    elif tel[i]=='W' or tel[i]=='X' or tel[i]=='Y' or tel[i]=='Z':
+         tel.replace(tel[i],'9')
+    print(tel)
         
